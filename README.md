@@ -1,7 +1,7 @@
 # Tmux:
 
 - tmux is a terminal multiplexer, let's call it a window manager for your terminal.
-- Multitasking in a terminal envronement
+- Multitasking in a terminal environment
 - 
 -
 
