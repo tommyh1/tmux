@@ -31,7 +31,9 @@
 - `Ctrl-b + z` (bring active window to front/back)
 -
 
-## Script to run tmux with multiple windows
+## Script to run tmux with 4 personalized windows
+
+![Screenshot](https://github.com/tommyh1/tmux/blob/d2953c576b534194bb513a97cde33dfb767938c7/Screenshot%20from%202022-06-29%2012-20-49.png)
 
 ```bash
 #!/bin/bash
