@@ -20,7 +20,7 @@
 - `tmux kill-server` (kills all running sessions)
 -
 
-## Most used shortcuts:
+## Some keybindings to get started:
 
 - `Ctrl-b + %` (split window vertically)
 - `Ctrl-b + "` (split window horizontally)
@@ -29,11 +29,11 @@
 - `Ctrl-b + >` (resize window vertically)
 - `Ctrl-b + <` (resize window horizontally)
 - `Ctrl-b + z` (bring active window to front/back)
--
+
+## All keybindings can be accessed by:
+- `Ctrl-b + ?`
 
 ## Script to run tmux with 4 personalized windows
-
-![Screenshot](https://github.com/tommyh1/tmux/blob/d2953c576b534194bb513a97cde33dfb767938c7/Screenshot%20from%202022-06-29%2012-20-49.png)
 
 ```bash
 #!/bin/bash
@@ -62,6 +62,7 @@ tmux select-window -t l15:terminal
 tmux -u attach -t l15
 
 ```
+![Screenshot](https://github.com/tommyh1/tmux/blob/d2953c576b534194bb513a97cde33dfb767938c7/Screenshot%20from%202022-06-29%2012-20-49.png)
 
 # Tmux personal config:
 
