@@ -1,16 +1,23 @@
 # Tmux:
+these are my personal notes
 
 - `tmux` is a terminal multiplexer, let's call it a window manager for your terminal.
 - Multitasking in a terminal environment (Linux/Mac)
-- 
--
 
-## Install:
+### Installation:
 
-* `apt install tmux`
-* `dnf install tmux`
-* `yum install tmux`
-- 
+### Debian/Ubuntu
+```bash
+apt install tmux
+```
+### RedHat/CentOs
+```bash
+dnf install tmux` 
+```
+### Arch
+```bash
+pacman install tmux` ### Arch
+```
 
 ## Launch tmux:
 
@@ -139,11 +146,12 @@ fi
 
 Script to run personalised tmux session:
 ----------------------------------------
+runs four different windows in one session at launch
 
+``` bash
 #!/bin/bash
 
 tmux new-session -s l15 -n terminal -d
-tmux split-window -h
 
 tmux new-window -t l15 -d -n mail/rss
 tmux send-keys -t l15:mail/rss "neomutt" Enter
@@ -164,4 +172,4 @@ tmux send-keys -t l15:weather "coinmon" Enter
 
 tmux select-window -t l15:terminal
 tmux -u attach -t l15
-
+```
