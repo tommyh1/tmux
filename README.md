@@ -16,7 +16,7 @@ dnf install tmux`
 ```
 ### Arch
 ```bash
-pacman install tmux` ### Arch
+pacman -S tmux` ### Arch
 ```
 
 ## Launch tmux:
