@@ -144,7 +144,7 @@ if [[ -z "$TMUX" ]]; then
 fi
 ```
 
-# Script to run personalised tmux session:
+# Script to run a personalised tmux session:
 ----------------------------------------
 * runs four different windows in one session at launch
 
