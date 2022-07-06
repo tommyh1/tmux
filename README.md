@@ -12,11 +12,11 @@ apt install tmux
 ```
 ### RedHat/CentOs
 ```bash
-dnf install tmux` 
+dnf install tmux 
 ```
 ### Arch
 ```bash
-pacman -S tmux` ### Arch
+pacman -S tmux ### Arch
 ```
 
 ## Launch tmux:
@@ -119,7 +119,7 @@ set-window-option -g window-status-bell-style fg=white,bg=red #base02, red
 set -g default-terminal screen-256color
 
 # resurrect
-set -g @plugin 'tmux-plugins/tmux-resurrect'
+# set -g @plugin 'tmux-plugins/tmux-resurrect'
 
 # tmux plugin manager
 # List of plugins
@@ -128,8 +128,8 @@ set -g @plugin 'tmux-plugins/tpm'
 
 
 
-To run 'tmux when opening a terminal, add the following script to your '.bashrc
-Script to check if tmux is running, if yes it attaches to the session else it creates a personalised session with a script:
+# To run tmux when opening a terminal, add the following script to your .bashrc
+* Script to check if tmux is running, if yes it attaches to the session else it creates a personalised session with a script:
 Can be run as a script, then don't forget the shebang: #!/bin/bash
 ---------------------------------------------------------------------------------------------------------------------------
 
@@ -144,9 +144,9 @@ if [[ -z "$TMUX" ]]; then
 fi
 ```
 
-Script to run personalised tmux session:
+# Script to run personalised tmux session:
 ----------------------------------------
-runs four different windows in one session at launch
+* runs four different windows in one session at launch
 
 ``` bash
 #!/bin/bash
