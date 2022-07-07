@@ -4,7 +4,7 @@ these are my personal notes
 - `tmux` is a terminal multiplexer, let's call it a window manager for your terminal.
 - Multitasking in a terminal environment (Linux/Mac)
 
-### Installation:
+# Installation:
 
 ### Debian/Ubuntu
 ```bash
@@ -19,9 +19,15 @@ dnf install tmux
 pacman -S tmux ### Arch
 ```
 
+### MacOs
+homebrew must be installed
+```zsh
+brew install tmux
+```
+
 ## Launch tmux:
 
-- `tmux` (launches a clean terminal window)
+- `tmux` (launches tmux)
 - `tmux a` (attaches to the running session)
 - `tmux ls` (lists running sessions)
 - `tmux kill-server` (kills all running sessions)
@@ -126,26 +132,8 @@ set -g default-terminal screen-256color
 set -g @plugin 'tmux-plugins/tpm'
 ```
 
-
-
-# To run tmux when opening a terminal, add the following script to your .bashrc
-* Script to check if tmux is running, if yes it attaches to the session else it creates a personalised session with a script:
-Can be run as a script, then don't forget the shebang: #!/bin/bash
----------------------------------------------------------------------------------------------------------------------------
-
-```bash
-
-if [[ -z "$TMUX" ]]; then
-	if tmux has-session 2>/dev/null; then
-		exec tmux a
-	else
-		bash devmux.sh
-	fi
-fi
-```
-
 # Script to run a personalised tmux session:
-----------------------------------------
+
 * runs four different windows in one session at launch
 
 ``` bash
@@ -172,4 +160,21 @@ tmux send-keys -t l15:weather "coinmon" Enter
 
 tmux select-window -t l15:terminal
 tmux -u attach -t l15
+```
+
+# To run tmux when opening a terminal, add the following script to your .bashrc
+
+* Script to check if tmux is running, if yes it attaches to the session else it creates a personalised session with a script:
+Can be run as a script, then don't forget the shebang: #!/bin/bash
+
+
+```bash
+
+if [[ -z "$TMUX" ]]; then
+	if tmux has-session 2>/dev/null; then
+		exec tmux a
+	else
+		bash devmux.sh
+	fi
+fi
 ```
