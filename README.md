@@ -135,6 +135,7 @@ set -g @plugin 'tmux-plugins/tpm'
 # Script to run a personalised tmux session:
 
 * runs four different windows in one session at launch
+* keybindig changed to Ctrl-Space
 
 ``` bash
 #!/bin/bash
