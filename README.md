@@ -4,6 +4,8 @@ these are my personal notes
 - `tmux` is a terminal multiplexer, let's call it a window manager for your terminal.
 - Multitasking in a terminal environment (Linux/Mac)
 
+![Screenshot](https://github.com/tommyh1/tmux/blob/d2953c576b534194bb513a97cde33dfb767938c7/Screenshot%20from%202022-06-29%2012-20-49.png)
+
 # Installation:
 
 ### Debian/Ubuntu
@@ -45,9 +47,6 @@ brew install tmux
 
 ## All keybindings can be accessed by:
 - `Ctrl-b + ?`
-
-
-![Screenshot](https://github.com/tommyh1/tmux/blob/d2953c576b534194bb513a97cde33dfb767938c7/Screenshot%20from%202022-06-29%2012-20-49.png)
 
 # Tmux personal config:
 * keybinding changed to Ctrl-Space
