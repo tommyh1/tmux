@@ -46,38 +46,13 @@ brew install tmux
 ## All keybindings can be accessed by:
 - `Ctrl-b + ?`
 
-## Script to run tmux with 4 personalized windows
 
-```bash
-#!/bin/bash
-
-tmux new-session -s l15 -n terminal -d
-tmux split-window -h
-
-tmux new-window -t l15 -d -n mail/rss
-tmux send-keys -t l15:mail/rss "neomutt" Enter
-tmux select-window -t l15:mail/rss
-tmux split-window -h -p 20
-tmux send-keys -t l15:mail/rss "newsboat" Enter
-
-tmux new-window -t l15 -d -n mc
-tmux send-keys -t l15:mc "mc" Enter
-
-tmux new-window -t l15 -d -n weather
-tmux send-keys -t l15:weather "./weather.sh" Enter
-tmux select-window -t l15:weather
-tmux split-window -h
-tmux send-keys -t l15:weather "./facts.sh" Enter
-tmux split-window -v
-tmux send-keys -t l15:weather "coinmon" Enter
-
-tmux select-window -t l15:terminal
-tmux -u attach -t l15
-
-```
 ![Screenshot](https://github.com/tommyh1/tmux/blob/d2953c576b534194bb513a97cde33dfb767938c7/Screenshot%20from%202022-06-29%2012-20-49.png)
 
 # Tmux personal config:
+* keybinding changed to Ctrl-Space
+* mouse activated
+* ...
 
 ```bash
 unbind C-b
@@ -135,7 +110,6 @@ set -g @plugin 'tmux-plugins/tpm'
 # Script to run a personalised tmux session:
 
 * runs four different windows in one session at launch
-* keybindig changed to Ctrl-Space
 
 ``` bash
 #!/bin/bash
