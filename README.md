@@ -120,6 +120,7 @@ tmux send-keys -t l15:mail/rss "neomutt" Enter
 tmux select-window -t l15:mail/rss
 tmux split-window -h -p 20
 tmux send-keys -t l15:mail/rss "newsboat" Enter
+select-pane -t 1
 
 tmux new-window -t l15 -d -n mc
 tmux send-keys -t l15:mc "mc" Enter
