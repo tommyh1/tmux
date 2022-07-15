@@ -23,3 +23,4 @@ tmux send-keys -t l15:weather "coinmon" Enter
 tmux select-window -t l15:terminal
 tmux -u attach -t l15
 
+# https://github.com/tommyh1
