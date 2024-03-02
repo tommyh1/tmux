@@ -3,7 +3,7 @@ Tmux:
 
 What is tmux, it's a terminal multiplexer, let's call it a window manager for your terminal.
 I don't know how i survived the command line without...
-Start getting productif and use tmux!
+Start getting productive and use tmux!
 
 Launch tmux:
 ------------
